@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <!-- Thư viện CSS Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" crossorigin="anonymous" />
+    <!-- Thư viện CSS Giao diện Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <h3 class="mt-4 mb-4">Danh sách sinh viên</h3>
+            <div class="mb-3 text-end">
+    <a href="student-form.html" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Thêm sinh viên mới
+    </a>
+        </div>
+        
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th style="width: 15%;">Mã sinh viên</th>
+                    <th style="width: 20%;">Họ và tên</th>
+                    <th style="width: 20%;">Email</th>
+                    <th style="width: 20%;">Số điện thoại</th>
+                    <th style="width: 10%;">Lớp</th>
+                    <th style="width: 15%;" class="text-end">Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <tr>
+                    <td colspan="6">Đang tải dữ liệu...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Script xử lý logic -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/student.js"></script>
+</body>
+</html>
